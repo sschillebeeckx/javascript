@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/buttonAction.js"></script>
+    <script src="../js/course.js"></script>
+</head>
+<body>
+   <h1>Course info</h1>
+   <button id="infoButton" onclick="showCourseInfo()">Show Course Info</button>
+   <div id="courseinfo" style="display:none"></div>
+   <script>
+      let c = new Course(1,"JavaScript programming",3,570,"23/09/2004",false,["John","An","Bart"]);
+      let result = c.getInfo();
+      document.getElementById('courseinfo').innerHTML = result;
+   </script>
+
+</body>
+</html>
