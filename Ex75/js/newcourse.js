@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let courseService = CourseService.getInstance();
         let courseCheck = courseService.findCourseById(parseInt(id));
         console.log(courseCheck);
-        if (courseCheck!==null) {
+        if (courseCheck!==undefined) {
             throw new CourseAlreadyExistsError("course already exists");
             return;
         }
