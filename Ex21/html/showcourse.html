@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/courseprog.js"></script>
+</head>
+<body>
+   <h1>Course info</h1>
+   <div id="courseinfo"></div>
+
+   <script>
+    let id = 1;
+    let title = "JavaScript programming";
+    let numberOfDays = 3;
+    let pricePerDay = 570;
+    let releaseDate="23/09/2004";
+    let priorKnowledge = false;
+    let instructors = ["John","An","Bart"];
+
+    let totalPrice = calculateTotalPrice(numberOfDays,pricePerDay,priorKnowledge);
+    let priceLabel = labelPrice(totalPrice);
+
+    let result = getInfo(id,title,releaseDate,totalPrice,priceLabel,priorKnowledge,instructors);
+    document.getElementById('courseinfo').innerHTML = result;
+
+</script>
+
+</body>
+</html>
