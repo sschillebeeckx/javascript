@@ -1,0 +1,3 @@
+Verplaats het inline script uit de showcourse.html file, naar showcourse.js.
+Zet de functionaliteit binnenin de showCourseInfo() functie. Van hieruit roep je de course.js op via een import.
+Zorg dat enkel de showcourse.js file nog rechtstreeks gelinkt is aan de html file.

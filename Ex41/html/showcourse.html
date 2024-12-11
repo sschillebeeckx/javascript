@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/course.js"></script>
+
+</head>
+<body>
+<h1>Course info</h1>
+<button id="infoButton">Show Course Info</button>
+<div id="courseinfo" style="display:none"></div>
+
+<script>
+
+    let info = document.getElementById("infoButton");
+
+    info.addEventListener("click", () => showCourseInfo());
+
+    function showCourseInfo() {
+        document.getElementById("courseinfo").style.display = "block";
+        let course = new Course(1,"Javascript Programming", 3,570,"23/09/2004",false,["John", "An", "Bart"]);
+        document.getElementById('courseinfo').innerHTML = course.getInfo();
+        info.style.display = "none";
+    }
+
+</script>
+
+
+</body>
+</html>

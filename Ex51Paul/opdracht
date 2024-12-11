@@ -1,0 +1,3 @@
+Wijzig de getInfo() in de Course class zodat:
+- de cursustitel volledig in hoofdletters getoond wordt
+- je de "join" methode van de Array class gebruikt om de namen van de instructors samen te voegen.

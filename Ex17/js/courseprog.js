@@ -20,13 +20,16 @@ switch (true){
     case totalPrice>2000 : priceLabel="EXPENSIVE";
 }
 
-let info = "Course "+ id + ":\n" + title + " was first released on " + releaseDate +
+let info = "Course " + id + ":\n" + title + " was first released on " + releaseDate +
     ".\nThe total price is " + totalPrice + "€. This is " + priceLabel + ".\nPrior Knowledge is " + (!priorKnowledge? "not ":"") + "required."
 
 let instructorSentence = (instructors.length===1)? "The instructor is: " : "The instructors are: ";
+/*for (let instructor of instructors){
+    console.log(instructor);
+}*/
 for (i in instructors){
     if (i<instructors.length-1) {
-        instructorSentence+= instructors[i] +", ";
+        instructorSentence= instructorSentence +  instructors[i] +", ";
     } else {
         instructorSentence +=  instructors[i] +".";
     }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new</title>
+  <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+  <h1>Add new course</h1>
+
+  <form id="newCourseForm">
+    <table>
+      <tr>
+        <td><label for="coId">Id</label></td>
+        <td>
+          <input type="number" id="coId" name="coId"/>
+          <span id="idError" class="error"></span>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="coTitle">Course Title</label></td>
+        <td>
+          <input type="text" id="coTitle" name="coTitle"/>
+          <span id="titleError" class="error"></span>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="coDays">Number of days</label></td>
+        <td>
+          <input type="number" id="coDays" name="coDays">
+        </td>
+      </tr>
+      <tr>
+        <td><label for="coPrice">Price Per Day</label></td>
+        <td>
+         <input type="number" id="coPrice" name="coPrice" min="0" max="700" step="0.01"/>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="coDate">Release Date</label></td>
+        <td>
+          <input type="date" id="coDate" name="coDate" placeholder="dd/mm/yyyy" value=""
+                 min="1997-01-01" max="2024-12-31">
+        </td>
+      </tr>
+      <tr>
+        <td><label>Prior Knowledge</label></td>
+        <td>
+          <input type="radio" id="coPriorY" name="coPrior" value="y"> YES
+          <input type="radio" id="coPriorN" name="coPrior" value="n"> NO
+        </td>
+      </tr>
+      <tr>
+        <td><label>Instructors</label></td>
+        <td>
+          <select id="instructors" multiple size="5">
+            <option value="Jan">Jan</option>
+            <option value="An">An</option>
+            <option value="Jean">Jean</option>
+            <option value="Bart">Bart</option>
+            <option value="Sandra">Sandra</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <button type="button" id="submitBtn">Submit</button>
+        </td>
+      </tr>
+    </table>
+    <br><br>
+    <div id="totalPriceCalculated" style="color:red; display: none; "></div>
+  </form>
+  <script src="../js/newcourse.js" type="module"></script>
+
+</body>
+</html>

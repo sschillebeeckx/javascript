@@ -1,0 +1,7 @@
+{
+  "name": "Ex42",
+  "version": "1.0.0",
+  "description": "",
+  "main": "buttonAction.js",
+  "type": "module"
+}
